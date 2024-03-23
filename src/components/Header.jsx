@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Flex, IconButton, Box } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import ColorModeSwitch from "../ColorModeSwitch";
+import ColorModeSwitch from "./ColorModeSwitch";
 import { NavLink } from "react-router-dom";
 import logo from "/assets/Logo.png";
 
@@ -63,7 +63,7 @@ const Header = () => {
         zIndex={30}
         height="178px"
         pos="fixed"
-        top="36px"
+        top="37px"
         right="0"
         borderRadius="10px"
         flexDir="column"

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import Footer from "../components/Footer";
-import Header from "../components/Header/Header";
+import Header from "../components/Header";
 
 const LandingPageLayout = () => {
   return (
