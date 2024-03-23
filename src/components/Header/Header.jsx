@@ -3,12 +3,12 @@ import { Box, Flex, List, IconButton } from "@chakra-ui/react";
 import logo from "/assets/Logo.png";
 import { useState } from "react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
-import "./Header.css"; 
+import "./Header.css";
 import ColorModeSwitch from "../ColorModeSwitch";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [display, changeDisplay] = useState("none");
   // Toggle navbar menu on smaller screens
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -41,7 +41,7 @@ const Header = () => {
       {/* Navbar menu */}
       <List
         className={`navbar-menu ${isOpen ? "active" : ""}`}
-        display={["none", "none", "flex", "flex"]} 
+        display={["none", "none", "flex", "flex"]}
       >
         {/* Close icon for closing the menu on smaller screens */}
         <IconButton
@@ -59,14 +59,14 @@ const Header = () => {
         <NavLink to="/contact">Kontakt</NavLink>
       </List>
 
-     {/* Component for toggling color mode */}
+      {/* Component for toggling color mode */}
       <Box className="nav-icons">
-        <ColorModeSwitch /> 
+        <ColorModeSwitch />
 
         {/* Hamburger icon for toggling menu on smaller screens */}
         <HamburgerIcon
           className="nav-toggle"
-          display={["flex", "flex", "none", "none"]} 
+          display={["flex", "flex", "none", "none"]}
           style={{ width: "20px", height: "28px" }}
           onClick={toggleMenu}
         />
