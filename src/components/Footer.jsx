@@ -12,18 +12,11 @@ const Footer = () => {
       position="fixed"
       bottom="0"
       width="100%"
-      zIndex="999"
+      zIndex={20}
       display="block"
     >
       {/* Social media icons */}
-      <Flex
-        justify="center"
-        align="center"
-        px={3}
-        gap="4"
-        color="gray.700"
-        my={1}
-      >
+      <Flex justify="center" align="center" px={3} gap="4" color="gray.700">
         <a href="#" style={{ cursor: "pointer" }}>
           <ion-icon name="logo-facebook"></ion-icon>
         </a>
@@ -63,7 +56,7 @@ const Footer = () => {
           Vasaloppsvägen 37, 127 42 Hägersten
         </Text>
 
-         {/* Copyright information */}
+        {/* Copyright information */}
         <Text fontSize="10px">© 2024 Alley Restaurant</Text>
       </Flex>
     </Box>

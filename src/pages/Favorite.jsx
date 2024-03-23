@@ -21,9 +21,9 @@ import Details from "../components/Details";
 const Favorite = () => {
   const { favorites } = useFavorites();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [favDetails, setFavDetails] = useState([]); 
+  const [favDetails, setFavDetails] = useState([]);
   const [openDrawers, setOpenDrawers] = useState([]);
-  const [drawerStates, setDrawerStates] = useState({}); 
+  const [drawerStates, setDrawerStates] = useState({});
 
   // Fetch the details of a favorite dish
   const fetchFavDetails = async (name) => {
@@ -68,7 +68,7 @@ const Favorite = () => {
 
   return (
     <>
-      <Box mt={8} mb={10} padding="5px">
+      <Box mt={12} mb={10} padding="5px">
         <Heading
           as="h1"
           size="xl"
@@ -86,9 +86,9 @@ const Favorite = () => {
           border="1px solid pink"
           borderRadius="10px"
           px={2}
-          pb={5}
+          pb={10}
           mx={10}
-          mt={5}
+          mt={8}
           mb={16}
         >
           <Stack

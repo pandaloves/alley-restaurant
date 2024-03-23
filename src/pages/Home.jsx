@@ -75,7 +75,8 @@ const Home = ({
         minH="30vh"
         px={5}
         mx={8}
-        my={10}
+        mt={20}
+        mb={10}
       >
         {/* Headings and search form */}
         <Stack
