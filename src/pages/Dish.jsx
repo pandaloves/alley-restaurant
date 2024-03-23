@@ -52,7 +52,7 @@ const Dish = ({ results }) => {
 
   return (
     <>
-      <Box mt={8} mb={5} padding="5px">
+      <Box mt={12} mb={5} padding="5px">
         <Heading
           as="h1"
           size="xl"
@@ -67,7 +67,7 @@ const Dish = ({ results }) => {
         columns={{ sm: 2, md: 3, lg: 4, xl: 5 }}
         padding="6px"
         mt={12}
-        mb={20}
+        mb={10}
         mx={6}
         spacing={5}
       >
