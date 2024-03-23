@@ -8,7 +8,6 @@ import ColorModeSwitch from "../ColorModeSwitch";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [display, changeDisplay] = useState("none");
   // Toggle navbar menu on smaller screens
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -39,10 +38,7 @@ const Header = () => {
       </Box>
 
       {/* Navbar menu */}
-      <List
-        className={`navbar-menu ${isOpen ? "active" : ""}`}
-        display={["none", "none", "flex", "flex"]}
-      >
+      <List className={`navbar-menu ${isOpen ? "active" : ""}`}>
         {/* Close icon for closing the menu on smaller screens */}
         <IconButton
           ml={142}
