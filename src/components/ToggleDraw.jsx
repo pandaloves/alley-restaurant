@@ -55,7 +55,7 @@ const ToggleDraw = ({ openDrawers, handleCloseDrawer }) => {
             />
             {/* Drawer header */}
             <DrawerHeader mt={4} fontSize={13} textAlign={"center"}>
-              {`Details about ${element.strMeal}`}
+              {`Detaljer om ${element.strMeal}`}
             </DrawerHeader>
             {/* Drawer body */}
             <DrawerBody mb={4}>
