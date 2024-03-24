@@ -14,12 +14,11 @@ const DishCard = ({ dishes, handleClick }) => {
   const { favorites, toggleFavorite } = useFavorites();
 
   // Display a notification when a dish is saved as a favorite
-  const saveFavorite = (dish) =>
-    toast(`${dish} has been saved as your favorite!!`);
+  const saveFavorite = (dish) => toast(`${dish} har sparats som din favorit!!`);
 
   // Display a notification when a dish is deleted from favorites
   const deleteFavorite = (dish) =>
-    toast(`${dish} has been deleted from your favorite!!`);
+    toast(`${dish} har tagits bort från din favorit!!`);
 
   return (
     <>
