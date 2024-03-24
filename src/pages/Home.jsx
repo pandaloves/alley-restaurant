@@ -123,7 +123,7 @@ const Home = ({
                   pl="1"
                   style={{
                     border: "2px solid orange",
-                    width: "250px",
+                    width: "260px",
                   }}
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
