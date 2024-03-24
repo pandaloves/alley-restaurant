@@ -183,7 +183,7 @@ const Home = ({
           borderRadius="10px"
           px="6"
           py="2"
-          fontSize="15px"
+          fontSize="12px"
           color="white"
         >
           Populära Maträtter
