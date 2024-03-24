@@ -102,7 +102,7 @@ const Home = ({
             lineHeight={1.5}
             textAlign={["center", "center", "left", "left"]}
           >
-            Vi erbjuder dig fräscha och utsökta rätter
+            Vi erbjuder dig fräscha och utsökta rätter.
           </Heading>
 
           {/* Search form */}
@@ -119,7 +119,7 @@ const Home = ({
                   placeholder="Ange ett maträttsnamn t.ex. Arrabiata"
                   size="md"
                   mb={2}
-                  fontSize="xs"
+                  fontSize="12px"
                   pl="1"
                   style={{
                     border: "2px solid orange",
@@ -129,7 +129,7 @@ const Home = ({
                   onChange={(e) => setInputValue(e.target.value)}
                 />
                 <InputRightElement pointerEvents="none">
-                  <Search2Icon color="gray.600" marginLeft={-3} />
+                  <Search2Icon color="gray.600" marginLeft={-4} />
                 </InputRightElement>
               </InputGroup>
 
@@ -183,6 +183,7 @@ const Home = ({
           borderRadius="10px"
           px="6"
           py="2"
+          fontSize="15px"
           color="white"
         >
           Populära Maträtter
