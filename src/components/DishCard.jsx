@@ -1,9 +1,9 @@
 import { Box, Card, CardBody, Image, Text } from "@chakra-ui/react";
 import PropTypes from "prop-types";
-import useFavorites from "../source/useFavorites"; 
-import { v4 as uuidv4 } from "uuid"; 
-import { ToastContainer, toast } from "react-toastify"; 
-import "react-toastify/dist/ReactToastify.css"; 
+import useFavorites from "../source/useFavorites";
+import { v4 as uuidv4 } from "uuid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DishCard = ({ dishes, handleClick }) => {
   DishCard.propTypes = {
@@ -16,7 +16,7 @@ const DishCard = ({ dishes, handleClick }) => {
   // Display a notification when a dish is saved as a favorite
   const saveFavorite = (dish) =>
     toast(`${dish} has been saved as your favorite!!`);
-  
+
   // Display a notification when a dish is deleted from favorites
   const deleteFavorite = (dish) =>
     toast(`${dish} has been deleted from your favorite!!`);
@@ -73,7 +73,7 @@ const DishCard = ({ dishes, handleClick }) => {
                 cursor="pointer"
                 onClick={() => handleClick(element)}
               >
-                {element.strMeal}
+                <b> {element.strMeal} </b>
               </Text>
 
               {/* Showing the price of the dish */}

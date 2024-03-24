@@ -10,16 +10,14 @@ import {
 } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
 
 const Details = ({ details }) => {
-  // PropTypes 
+  // PropTypes
   Details.propTypes = {
     details: PropTypes.array,
   };
 
   const [ratings, setRatings] = useState(() => {
-    
     // Load ratings from localStorage or default to 5 for each item
     const savedRatings = JSON.parse(localStorage.getItem("ratings")) || {};
     return details.reduce((acc, item) => {
@@ -83,7 +81,7 @@ const Details = ({ details }) => {
                   margin="10px"
                   fontWeight="semibold"
                 >
-                  <WrapItem>Rating:</WrapItem>
+                  <WrapItem>Betyg:</WrapItem>
                   <WrapItem>{ratings[item.idMeal]}</WrapItem>
                 </Wrap>
 
@@ -103,7 +101,7 @@ const Details = ({ details }) => {
                   {/* Options for selecting rating */}
                   {[1, 2, 3, 4, 5].map((num) => (
                     <option key={num} value={num}>
-                      {num} Stars
+                      {num} stjärnor
                     </option>
                   ))}
                 </Select>
@@ -111,20 +109,20 @@ const Details = ({ details }) => {
                 {/* Displaying details of the dish */}
                 <UnorderedList>
                   <ListItem>
-                    <b>Name:</b> {item.strMeal}
+                    <b>Namn:</b> {item.strMeal}
                   </ListItem>
                   <ListItem>
-                    <b>Price:</b> 139 kr
+                    <b>Pris:</b> 139 kr
                   </ListItem>
                   <ListItem>
-                    <b>Category:</b> {item.strCategory}
+                    <b>Kategori:</b> {item.strCategory}
                   </ListItem>
                   <ListItem>
-                    <b>Area: </b>
+                    <b>Område: </b>
                     {item.strArea}
                   </ListItem>
                   <ListItem>
-                    <b>Ingredients:</b> {item.strIngredient1},
+                    <b>Ingredienser:</b> {item.strIngredient1},
                     {item.strIngredient2}, {item.strIngredient3},
                     {item.strIngredient4}
                   </ListItem>
