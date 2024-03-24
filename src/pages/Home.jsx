@@ -116,7 +116,7 @@ const Home = ({
                 <Input
                   ref={inputRef}
                   type="text"
-                  placeholder="Ange ett maträttsnamn t.ex. Arrabiata"
+                  placeholder="Ange en maträtt t.ex. Arrabiata"
                   size="md"
                   mb={2}
                   fontSize="12px"
@@ -129,7 +129,7 @@ const Home = ({
                   onChange={(e) => setInputValue(e.target.value)}
                 />
                 <InputRightElement pointerEvents="none">
-                  <Search2Icon color="gray.600" marginLeft={-4} />
+                  <Search2Icon color="gray.600" marginLeft={-10} />
                 </InputRightElement>
               </InputGroup>
 
