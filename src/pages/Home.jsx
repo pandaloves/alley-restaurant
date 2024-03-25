@@ -120,7 +120,7 @@ const Home = ({
                   size="md"
                   mb={2}
                   fontSize="12px"
-                  pl="1"
+                  pl="2"
                   style={{
                     border: "2px solid orange",
                     width: "260px",

@@ -18,7 +18,7 @@ const Header = () => {
         alignItems="center"
         padding="0 15px"
         w="100%"
-        h="40px"
+        h="45px"
         top="0"
         color="black"
         fontSize="1em"
@@ -34,11 +34,12 @@ const Header = () => {
         </Box>
 
         {/* Desktop */}
-        <Flex display={["none", "none", "flex", "flex"]} gap={10}>
+        <Flex display={["none", "none", "flex", "flex"]} gap={40}>
           <NavLink to="/">Hem</NavLink>
           <NavLink to="/favorite">Favoriträtter</NavLink>
           <NavLink to="/contact">Kontakt</NavLink>
         </Flex>
+
         <Box style={{ display: "flex", flexDirection: "row", gap: "1px" }}>
           <ColorModeSwitch />
           {/* Mobile */}
@@ -56,18 +57,18 @@ const Header = () => {
 
       {/* Mobile Content */}
       <Flex
-        w="200px"
+        w="160px"
         display={display}
         backgroundColor="orange"
         color="black"
         zIndex={30}
-        height="178px"
+        height="200px"
         pos="fixed"
-        top="37px"
-        right="0"
+        top="43.8px"
+        right="25px"
         borderRadius="10px"
         flexDir="column"
-        lineHeight="30px"
+        lineHeight="38px"
       >
         <Flex justify="flex-end">
           <IconButton
