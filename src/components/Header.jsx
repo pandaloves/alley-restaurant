@@ -34,10 +34,23 @@ const Header = () => {
         </Box>
 
         {/* Desktop */}
-        <Flex display={["none", "none", "flex", "flex"]} gap={40}>
-          <NavLink to="/">Hem</NavLink>
-          <NavLink to="/favorite">Favoriträtter</NavLink>
-          <NavLink to="/contact">Kontakt</NavLink>
+        <Flex display={["none", "none", "flex", "flex"]} gap={40} style={{}}>
+          <style>
+            {`
+              .navLink:hover {
+                color: orange;
+              }
+            `}
+          </style>
+          <NavLink to="/" className="navLink">
+            Hem
+          </NavLink>
+          <NavLink to="/favorite" className="navLink">
+            Favoriträtter
+          </NavLink>
+          <NavLink to="/contact" className="navLink">
+            Kontakt
+          </NavLink>
         </Flex>
 
         <Box style={{ display: "flex", flexDirection: "row", gap: "1px" }}>
@@ -82,10 +95,23 @@ const Header = () => {
           />
         </Flex>
 
-        <Flex flexDir="column" align="center" height="200px">
-          <NavLink to="/">Hem</NavLink>
-          <NavLink to="/favorite">Favoriträtter</NavLink>
-          <NavLink to="/contact">Kontakt</NavLink>
+        <Flex flexDir="column" align="center" height="200px" style={{}}>
+          <style>
+            {`
+            .hamburger-link:hover {
+                color: white;
+              }
+            `}
+          </style>
+          <NavLink to="/" className="hamburger-link">
+            Hem
+          </NavLink>
+          <NavLink to="/favorite" className="hamburger-link">
+            Favoriträtter
+          </NavLink>
+          <NavLink to="/contact" className="hamburger-link">
+            Kontakt
+          </NavLink>
         </Flex>
       </Flex>
     </Flex>
