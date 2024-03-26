@@ -38,7 +38,7 @@ const Header = () => {
           <style>
             {`
               .navLink:hover {
-                color: orange;
+                color: white;
               }
             `}
           </style>
