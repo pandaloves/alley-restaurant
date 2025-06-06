@@ -68,7 +68,7 @@ const Favorite = () => {
 
   return (
     <>
-      <Box mt={12} mb={10} padding="5px">
+      <Box mt={20} mb={10} padding="5px">
         <Heading
           as="h1"
           size="xl"
@@ -98,9 +98,19 @@ const Favorite = () => {
             align="center"
           >
             {/* Mapping over favorite dishes */}
-            {favorites.map((favorite) => (
+            {favorites.length === 0 ? (
+            <Text
+              fontSize="lg"
+              fontWeight="bold"
+              textAlign="center" >
+                Det finns ingen favoriträtt.</Text>
+              ) 
+              : (
+            favorites.map((favorite) => (
               <Text
                 key={uuidv4()}
+                fontSize='lg'
+                fontWeight="bold"
                 cursor="pointer"
                 onClick={() => {
                   fetchFavDetails(favorite);
@@ -109,7 +119,8 @@ const Favorite = () => {
               >
                 {favorite}
               </Text>
-            ))}
+            ))
+            )}
           </Stack>
         </Flex>
 

@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 const Contact = () => {
   return (
     <>
-      <Box mt={12} mb={10} padding="5px">
+      <Box mt={20} mb={10} padding="5px">
         <Heading
           as="h1"
           size="xl"
