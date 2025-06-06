@@ -31,7 +31,7 @@ const useFavorites = () => {
   }, []);
 
   // Return favorites state and toggleFavorite function
-  return { favorites, toggleFavorite };
+  return { favorites, setFavorites, toggleFavorite };
 };
 
 export default useFavorites;

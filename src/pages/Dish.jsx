@@ -52,7 +52,7 @@ const Dish = ({ results }) => {
 
   return (
     <>
-      <Box mt={12} mb={5} padding="5px">
+      <Box mt={20} mb={5} padding="5px">
         <Heading
           as="h1"
           size="xl"

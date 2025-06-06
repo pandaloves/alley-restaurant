@@ -18,7 +18,7 @@ const Header = () => {
         alignItems="center"
         padding="0 15px"
         w="100%"
-        h="45px"
+        h="60px"
         top="0"
         color="black"
         fontSize="1em"
